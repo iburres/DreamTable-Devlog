@@ -24,6 +24,6 @@ This milestone established the core player character and scene infrastructure.
 
 ### Visuals
 - DungeonDraft map imported as background (6000×6000px, 40×40 cells)
-- HoloHeroes Fighter token wired to player prefab
+- Custom token wired to player prefab
 - Dragon token staged for future enemy use
 - Sorting order stack: Background (−10) → Walls (0) → Tokens (1)

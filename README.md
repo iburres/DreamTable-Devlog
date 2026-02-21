@@ -27,7 +27,7 @@ DreamTable aims to bring the feel of a digital tabletop session to a standalone 
 
 ### ✅ Milestone 2 — Scene & Visuals *(Feb 2026)*
 - DungeonDraft map loaded as scene background (40×40 cells, 150px/cell)
-- HoloHeroes animated token pipeline — Fighter token on player
+- Custom token on player
 - Dragon token staged for enemy use
 - Sorting layer stack: map → walls → tokens
 
@@ -49,7 +49,7 @@ DreamTable aims to bring the feel of a digital tabletop session to a standalone 
 | Render pipeline | URP (Universal Render Pipeline) |
 | Input | Unity Input System 1.11.2 |
 | Maps | DungeonDraft |
-| Tokens | HoloHeroes Animated Tokens |
+| Tokens | Custom tokens |
 | Version control | Git / GitHub |
 
 ---
