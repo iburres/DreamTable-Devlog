@@ -20,7 +20,7 @@ DreamTable aims to bring the feel of a digital tabletop session to a standalone 
 - New Input System action maps (WASD, mouse click, gamepad)
 - Grid-based movement controller with **FreeRoam** and **Combat** modes
   - FreeRoam: smooth analog movement for exploration
-  - Combat: grid-snapped turn-based movement *(coming soon)*
+  - Combat: grid-snapped turn-based movement
 - D&D 5E-style stat block (HP, Speed, Level, XP)
 - Smooth camera follow with **mouse wheel zoom**
 - Cardinal direction token rotation (token faces direction of movement)
@@ -31,8 +31,16 @@ DreamTable aims to bring the feel of a digital tabletop session to a standalone 
 - Dragon token staged for enemy use
 - Sorting layer stack: map → walls → tokens
 
+### ✅ Milestone 3 — Combat Mode Core *(Feb 2026)*
+- **C key** toggles combat mode on/off
+- Grid overlay appears in combat (40×40 cells, LineRenderer-based, URP-safe)
+- Movement budget: 6 cells/turn drawn from `PlayerStats.Speed`
+- Budget guard on `MoveToCell` — token stops when cells are exhausted
+- **End Turn** resets budget (keyboard: Enter, gamepad: left shoulder)
+- Combat HUD: live "Movement: X / 6" label + End Turn button
+
 ### 🔲 Up Next
-- Combat mode: grid overlay, initiative tracker, movement budget per turn
+- Initiative tracker and turn order
 - Enemy placement and basic AI
 - Scene transitions / multiple maps
 - Fog of war / vision radius
