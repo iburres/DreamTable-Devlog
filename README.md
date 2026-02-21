@@ -70,7 +70,8 @@ The source code and assets are in a private repository. If you're interested in 
 
 ## Screenshots
 
-*Coming soon — first playable build in progress.*
+**Milestone 3 — Combat Mode Core**
+![DreamTable — combat mode grid overlay and dungeon map](screenshots/milestone-3-combat-mode.png)
 
 ---
 
