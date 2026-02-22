@@ -10,11 +10,10 @@ This milestone delivers the first functional combat pass: a C key toggle that sh
 
 ### Combat Toggle
 
-Pressing **C** calls `CombatManager.EnterCombat()` / `ExitCombat()`, which switches `PlayerController` between `FreeRoam` and `Combat` modes. A second press exits combat and returns to free-roam. Two new Input System actions were added to the Player action map:
+`CombatManager.EnterCombat()` / `ExitCombat()` are public methods called by the game — not bound to a key. Combat starts when the player steps on a trigger zone or targets an enemy with an attack or offensive spell action; it ends when the encounter resolves. One Input System action was added to the Player action map:
 
 | Action | Keyboard | Gamepad |
 |---|---|---|
-| ToggleCombat | C | — |
 | EndTurn | Enter | Left Shoulder |
 
 ### CombatManager

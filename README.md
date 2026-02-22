@@ -32,7 +32,7 @@ DreamTable aims to bring the feel of a digital tabletop session to a standalone 
 - Sorting layer stack: map → walls → tokens
 
 ### ✅ Milestone 3 — Combat Mode Core *(Feb 2026)*
-- **C key** toggles combat mode on/off
+- Combat mode entered via scripted triggers and enemy targeting (attack / spell)
 - Grid overlay appears in combat (40×40 cells, LineRenderer-based, URP-safe)
 - Movement budget: 6 cells/turn drawn from `PlayerStats.Speed`
 - Budget guard on `MoveToCell` — token stops when cells are exhausted
