@@ -57,7 +57,7 @@ DreamTable aims to bring the feel of a digital tabletop session to a standalone 
 | Render pipeline | URP (Universal Render Pipeline) |
 | Input | Unity Input System 1.11.2 |
 | Maps | DungeonDraft |
-| Tokens | Custom tokens |
+| Tokens | Custom tokens (PNG / JPG / WebP) |
 | Version control | Git / GitHub |
 
 ---

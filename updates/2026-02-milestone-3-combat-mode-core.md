@@ -58,6 +58,10 @@ if (currentMode == MovementMode.Combat
 
 This applies to both WASD steps and point-and-click moves.
 
+### Research Notes
+
+While studying how Fantasy Grounds handles tokens and maps, one useful finding: FG recommends **WebP** as the preferred token format for larger resolutions, citing file size. Unity 2022+ includes native WebP support via `ImageConversion` on all major platforms, so the token loading system will accept PNG, JPG, and WebP at the same import path with no additional libraries required. This will matter when token sheets and large-creature assets start accumulating.
+
 ### Tooling
 
 - `CombatSetup` — editor tool (`Tools > Setup Combat`) that creates and wires all scene objects via `SerializedObject`, then saves the scene
