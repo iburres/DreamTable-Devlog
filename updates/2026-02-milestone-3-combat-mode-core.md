@@ -1,7 +1,5 @@
 # Milestone 3 — Combat Mode Core
 
-![DreamTable — dungeon map with player token](../screenshots/milestone-3-combat-mode.png)
-
 **Date:** February 2026
 
 ## What was built
