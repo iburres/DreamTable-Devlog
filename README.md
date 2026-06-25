@@ -1,80 +1,91 @@
-# DreamTable — Development Log
+# Gloomharbor — Development Log
 
-> A top-down 2D tactical RPG built in Unity 6, inspired by virtual tabletop platforms like FoundryVTT and Roll20. Play solo or with friends across richly detailed maps with D&D 5E-style combat rules.
-
----
-
-## What is DreamTable?
-
-DreamTable aims to bring the feel of a digital tabletop session to a standalone game — custom maps, animated character tokens, turn-based grid combat, and free-roam exploration. Think of it as the game *inside* your TTRPG session.
-
-**Engine:** Unity 6 (URP)
-**Genre:** Top-down tactical RPG
-**Status:** Early development
+> Built by **DreamTable Studios**
 
 ---
 
-## Progress
+## What is Gloomharbor?
 
-### ✅ Milestone 1 — Player Foundation *(Feb 2026)*
-- New Input System action maps (WASD, mouse click, gamepad)
-- Grid-based movement controller with **FreeRoam** and **Combat** modes
-  - FreeRoam: smooth analog movement for exploration
-  - Combat: grid-snapped turn-based movement
-- D&D 5E-style stat block (HP, Speed, Level, XP)
-- Smooth camera follow with **mouse wheel zoom**
-- Cardinal direction token rotation (token faces direction of movement)
+Gloomharbor is a top-down 2D dark fantasy RPG and a self-contained RPG creation platform — both in one application. Play the game, then open the built-in editor and build your own.
 
-### ✅ Milestone 2 — Scene & Visuals *(Feb 2026)*
-- DungeonDraft map loaded as scene background (40×40 cells, 150px/cell)
-- Custom token on player
-- Dragon token staged for enemy use
-- Sorting layer stack: map → walls → tokens
-
-### ✅ Milestone 3 — Combat Mode Core *(Feb 2026)*
-- Combat mode entered via scripted triggers and enemy targeting (attack / spell)
-- Grid overlay appears in combat (40×40 cells, LineRenderer-based, URP-safe)
-- Movement budget: 6 cells/turn drawn from `PlayerStats.Speed`
-- Budget guard on `MoveToCell` — token stops when cells are exhausted
-- **End Turn** resets budget (keyboard: Enter, gamepad: left shoulder)
-- Combat HUD: live "Movement: X / 6" label + End Turn button
-
-### 🔲 Up Next
-- Initiative tracker and turn order
-- Enemy placement and basic AI
-- Scene transitions / multiple maps
-- Fog of war / vision radius
-- Inventory and item system
-- UI: HUD, health bars, turn order panel
+The world of Gloomharbor is a hidden continent locked inside the Bermuda Triangle, invisible to the outside world. Ships and planes that vanish there didn't disappear — they arrived.
 
 ---
 
-## Tech Stack
+## Two Products, One App
 
-| Layer | Tool |
-|---|---|
-| Engine | Unity 6000.3.9f1 |
-| Render pipeline | URP (Universal Render Pipeline) |
-| Input | Unity Input System 1.11.2 |
-| Maps | DungeonDraft |
-| Tokens | Custom tokens (PNG / JPG / WebP) |
-| Version control | Git / GitHub |
+### The Game
+A dark fantasy RPG set in the world of Gloomharbor. Turn-based combat, party-based exploration, atmospheric lighting, branching dialogue, and scripted encounters — built on the D&D 5th Edition System Reference Document (SRD).
+
+### The Editor
+A full suite of creation tools bundled with the game — no external software required:
+- **Map Editor** — build indoor and exterior areas from scratch, or import from tools like DungeonDraft
+- **Token Editor** — create and customize player, NPC, and monster tokens with layered appearance
+- **Dialogue Editor** — build branching conversations with a visual node graph
+- **Script Editor** — write encounter logic and automation in a built-in scripting environment
+- **Character Editor** — design full character sheets with stats, abilities, and token appearance
+- **Module Packaging** — export a complete game or adventure module as a single shareable file
+
+Developers can build and distribute their own standalone RPG games or playable adventure modules — campaigns a Game Master can run for a group of players in virtual tabletop mode.
 
 ---
 
-## Contributing
+## Vision
 
-The source code and assets are in a private repository. If you're interested in contributing — art, code, maps, sound, or playtesting — open an **Issue** or **Discussion** here to get in touch.
+The goal is to give developers and storytellers — including those with limited coding experience — everything they need to create and share a real, playable RPG game without purchasing additional tools. Think Neverwinter Nights, but as a modern top-down platform with high-quality painterly art, animated environments, and full virtual tabletop support.
+
+Gloomharbor is planned for release on Steam, with the editor included as a first-class selling point.
 
 ---
 
-## Screenshots
+## Tech Foundation
 
-**Milestone 3 — Combat Mode Core**
-![DreamTable — combat mode grid overlay and dungeon map](screenshots/milestone-3-combat-mode.png)
+Built on a modern, battle-tested web technology stack running inside a native desktop shell:
+- **Rendering:** PixiJS v8 with WebGL 2.0
+- **Real-time multiplayer:** WebSocket + WebRTC peer-to-peer
+- **Scripting:** Lua sandbox
+- **Data:** LevelDB
+
+Evolved from an earlier prototype — the engine foundation carries forward, now significantly expanded.
+
+---
+
+## Ruleset Support
+
+- **Demo / Early Access:** D&D 5th Edition SRD (Creative Commons, fully open)
+- **Full Release:** Pathfinder 2nd Edition (open license from Paizo)
+- Ruleset engine is data-driven — additional systems can be added as content packs
+
+---
+
+## Roadmap
+
+| Milestone | Description | Status |
+|-----------|-------------|--------|
+| Foundation | Architecture design, dev infrastructure, engine foundation | ✅ Complete |
+| Kickstarter Demo | Short playable haunted mansion — combat, dialogue, traps, exploration | 🔄 In Progress |
+| Kickstarter Campaign | Fund artist team for high-quality game assets | ⏳ Planned |
+| Full Game — Alpha | Complete Gloomharbor world, all editor tools functional | ⏳ Planned |
+| Steam Release | Game + bundled editor shipped on Steam | ⏳ Planned |
+
+---
+
+## Development Updates
+
+See the [`updates/`](./updates/) directory for detailed milestone entries.
+
+| Date | Entry |
+|------|-------|
+| June 2026 | [Pivot — Gloomharbor: New Direction, New Foundation](./updates/2026-06-pivot-to-gloomharbor.md) |
+| Feb 2026 | [Milestone 3 — Combat Mode Core](./updates/2026-02-milestone-3-combat-mode-core.md) |
+| Feb 2026 | [Milestone 1 — Player Foundation](./updates/2026-02-milestone-1-player-foundation.md) |
 
 ---
 
 ## Follow Along
 
-Updates are posted here as milestones are reached. Watch/star the repo to get notified.
+Updates are posted here as milestones are reached. Watch or star the repo to get notified.
+
+---
+
+*DreamTable Studios — building worlds worth exploring.*
