@@ -34,7 +34,7 @@ Developers can build and distribute their own standalone RPG games or playable a
 
 The goal is to give developers and storytellers — including those with limited coding experience — everything they need to create and share a real, playable RPG game without purchasing additional tools. Think Neverwinter Nights, but as a modern top-down platform with high-quality painterly art, animated environments, and full virtual tabletop support.
 
-Gloomharbor is planned for release on Steam, with the editor included as a first-class selling point.
+Gloomharbor is planned for release on Steam, with the editor included as a first-class feature.
 
 ---
 
