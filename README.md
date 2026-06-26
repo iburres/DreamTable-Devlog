@@ -8,7 +8,7 @@
 
 Gloomharbor is a top-down 2D dark fantasy RPG and a self-contained RPG creation platform — both in one application. Play the game, then open the built-in editor and build your own.
 
-The world of Gloomharbor is a hidden continent locked inside the Bermuda Triangle, invisible to the outside world. Ships and planes that vanish there didn't disappear — they arrived.
+The world of Gloomharbor is a dark fantasy continent shrouded in ancient mystery — a place the outside world has never found, and perhaps was never meant to.
 
 ---
 

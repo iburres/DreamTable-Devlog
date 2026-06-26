@@ -20,7 +20,7 @@ What started as "a top-down RPG" is now a full platform:
 
 **Gloomharbor** is both a game and a creation suite. The editor ships with the game. Players can build and share their own RPG games and adventure modules — campaigns a Game Master can run for a group in virtual tabletop mode. No external tools required.
 
-The game world itself — a hidden dark fantasy continent locked inside the Bermuda Triangle, surrounded by fog that loops back on itself — became the name and the identity of the entire platform.
+The game world itself — a hidden dark fantasy continent shrouded in ancient fog, unknown to the outside world — became the name and the identity of the entire platform.
 
 ---
 
